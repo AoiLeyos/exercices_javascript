@@ -36,3 +36,24 @@ quels sont les résultats de ces expressions  ? */
 `null + 1` // le résultat de cette expression est 1 car le "+" convertie en number, et null en number équivaut a 0. (null + 1 = 0 + 1 = 1)  
 `undefined + 1` // le résultat de cette expression est NaN car le "+" convertie en number et undifined équivaut a NaN (undifined + 1 = NaN + 1 = NaN)
 `" \t \n" - 2` // le résultat de cette expression est -2 car le "-" convertie en number et " \t \n" les \ sont des actions donc en calcul cela vaut 0 (" \t \n" -2 = 0 - 2 = -2)
+
+// ------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------
+
+/*Corrigez l'addition
+Voici un code qui demande à l’utilisateur deux nombres et affiche leur somme.
+
+Cela ne fonctionne pas correctement. La sortie dans l’exemple ci-dessous est 12 (pour les valeurs d’invite par défaut).
+
+Pourquoi ? Réparez-le. Le résultat doit être 3. */
+
+`let a = prompt("First number?", 1);` 
+`let b = prompt("Second number?", 2);`
+`alert(a + b); // 12`
+
+//La raison pour la quelle nous avons le résultat 12, c'est parce que il y a concaténation entre la variable a et b
+//Pour réparé et avoir le bon résultat il faut mettre son code comme ceux-la car il faut convertir en number: 
+
+`let a = +prompt("First number?", 1);` 
+`let b = +prompt("Second number?", 2);`
+`alert(a + b); // 12`
