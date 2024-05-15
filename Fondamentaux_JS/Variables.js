@@ -5,7 +5,7 @@ Déclarez deux variables : admin and name.
 Assignez la valeur "John" à name.
 Copiez la valeur de name à admin.
 Afficher la valeur de admin en utilisant alert (devrait afficher “John”). */
-
+"use strict"
 let admin;
 
 let name;
@@ -25,6 +25,7 @@ console.log(admin);
 Créez la variable avec le nom de notre planète. Comment nommeriez-vous une telle variable ?
 Créez la variable pour stocker le nom du visiteur actuel. Comment nommeriez-vous cette variable ?*/
 
+"use strict"
 
 let ourPlanet = "Terre";
 
