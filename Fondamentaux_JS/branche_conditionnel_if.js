@@ -59,7 +59,7 @@ else {
 // ------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------
 
-/*Réecrire 'if' en '?'
+/*Réécrire 'if' en '?'
 Réécrivez ce if en utilisant l’opérateur conditionnel '?' : */
 `let result;
 
@@ -69,4 +69,29 @@ if (a + b < 4) {
   result = 'Over';
 }`
 
-let result = (a + b < 4) ? below : over;
+let result = (a + b < 4) ? 'below' : 'over';
+
+// ------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------
+
+/*Réécrire 'if...else' en '?'
+Réécrire ce if..else en utilisant plusieurs opérateurs ternaires '?'.
+
+Pour plus de lisibilité, il est recommandé de diviser le code en plusieurs lignes. */
+
+`let message;
+
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}`
+
+let message = (login == 'Employee') ? 'Hello' : 
+    (login == 'Director') ? 'Greetings' :
+    (login == '') ? 'No login' :
+    '';
