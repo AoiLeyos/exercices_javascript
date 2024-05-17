@@ -48,7 +48,9 @@ Ecrivez une condition "if" pour vérifier que l’age est compris entre 14 et 90
 
 “Inclus” signifie que l’age peut atteindre les 14 ou 90 ans. */
 
-if (14<=age<=90);
+if (age >= 14 && age <=90) {
+    console.log("l'age est compris entre 14 et 90 ans inclus");
+};
 
 // ------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------
@@ -57,10 +59,20 @@ if (14<=age<=90);
 Ecrivez une condition if pour vérifier que l’age n’est PAS compris entre 14 et 90 ans inclus.
 
 Créez deux variantes: la première utilisant NOT !, La seconde – sans ce dernier. */
+let age = Math.round(Math.random()*100)
+if (!(age => 14 && age <= 90)) {
+    console.log ("l'age n'est pas compris entre 14 et 90 ans inclus")
+}
+else {
+    console.log("l'age est compris entre 14 et 90 ans inclus");
+};
 
-if (!14<=age<=90);
-
-if (14>age>90);
+if (age < 14 && age > 90) {
+    console.log ("l'age n'est pas compris entre 14 et 90 ans");
+}
+else {
+    console.log ("l'age est compris entre 14 et 90 inclus")
+};
 
 // ------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------
@@ -111,3 +123,4 @@ else if (User=="" || null) {
 else {
     alert("i don't know you");
 }
+
